@@ -1,3 +1,4 @@
+#Précédemment utilisé lors des TPS
 function distanceMatrice()
   close all
   clear all

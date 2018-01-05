@@ -1,3 +1,4 @@
+#Inutilisé
 function preparation()
   for i=51:1:53
     J = imread(strcat("images/Visages/test",num2str(i),".png"));

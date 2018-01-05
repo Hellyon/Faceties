@@ -1,11 +1,5 @@
+#Appels des fonctions pour la reconnaissance grâce la distance Euclidienne puis l'affichage des visages les plus proches
 function ReconnaissanceEuclidienne(M)
-  k=1;
   IDXp = reconEuclidienne(M)
-  subplot(2,3,2);
-  imshow(Vector2I(M(:,IDXp(k))));
-  for i=3:3:12
-    subplot(3,4,i);
-    imshow(Vector2I(M(:,IDXp(k))));
-    k=k+1;
-  endfor
+  affichageResultats(M, IDXp);
 endfunction
