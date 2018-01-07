@@ -2,6 +2,7 @@ clear all
 close all
 pkg load image
 M = initialiserBanqueImages();
+VM = visageMoyen(M);
 faceties = figure("numbertitle", "off", "name", "Facéties", "menubar", "none", "resize", "off", "position", [500 250 800 600]);
 
 panel = uipanel(faceties, "position", [0 0 1 0.3]);
