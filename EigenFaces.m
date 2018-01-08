@@ -1,6 +1,6 @@
 #Calcule la projection orthogonal de chaque visage de la base M et de l'image source 
 #Utilise la distance Euclidienne afin de retourner les 5 visages avec l'expression faciale la plus proche 
-#explique pourquoi vous ne trouvez pas forcément toutes les images de la mêem personne avec ce test
+#explique pourquoi vous ne trouvez pas forcï¿½ment toutes les images de la mï¿½em personne avec ce test
 function [IDXp] = EigenFaces(M)
   [u, s, v] = svd(M, 'econ');
   [D n] = size(M);

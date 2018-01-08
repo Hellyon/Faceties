@@ -1,4 +1,4 @@
-#prépare l'histogramme histI et histJ afin de calculer la distance de Bhattacharrya pour chaque visage de la base avec hist.  Renvoie l'id des 5 visages les plus proches
+#prï¿½pare l'histogramme histI et histJ afin de calculer la distance de Bhattacharrya pour chaque visage de la base avec hist.  Renvoie l'id des 5 visages les plus proches
 function [idxP] = reconBhattacharrya(MJ,VM)
   tic
   [D n] = size(MJ);

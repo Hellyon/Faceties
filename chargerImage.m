@@ -9,7 +9,7 @@ function chargerImage(p)
     global histI;
     ax = 0:5:255;
     [histI ce] = hist(I(:), ax);
-    histI = histI/128*128;
+    histI = histI/(128*128);
     #affichage de l'image  sujet
     subplot(2,2,1);
     imshow(I);

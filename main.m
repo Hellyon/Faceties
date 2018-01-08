@@ -1,10 +1,10 @@
 clear all
 close all
-pkg load image
+#pkg load image
 M = initialiserBanqueImages();
 [MJ] = preparerHistogrammes(M);
 VM = visageMoyen(M);
-faceties = figure("numbertitle", "off", "name", "Facéties", "menubar", "none", "resize", "off", "position", [500 250 800 600]);
+faceties = figure("numbertitle", "off", "name", "Facï¿½ties", "menubar", "none", "resize", "off", "position", [500 250 800 600]);
 
 panel = uipanel(faceties, "position", [0 0 1 0.3]);
 boutonCharger = uicontrol(panel, "string","Charger Image", "position",
@@ -21,4 +21,3 @@ boutonEigenFaces = uicontrol (faceties, "string", "Reconnaissance avec EigenFace
          
 boutonFermer = uicontrol (faceties, "string", "Fermer",
          "position", [10 10 150 40], "callback","delete(gcf)");
-
